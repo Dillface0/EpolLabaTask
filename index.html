@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>EpolSoftLaba</title>
+	<script src="js.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+	</head>
+	<body>
+	<header id="header" class="header">
+		<h1>Тестовое задание:</h1>
+		<p>Необходимо:написать программу, которая запрашивает два массива при запуске, затем формирует строку по следующему алгоритму: если элемент из первого массива встречается во втором массиве, то в строку в соответствии с порядком следования элементов в первом массиве записываем “1”, иначе “0”.</p>
+	<form action="js.js" method="post" onsubmit="valid(this)" >
+	<label for="text">Массив(первый) строк состоящий из 9 элементов(Каждый элемент массива при записи надо разделять пробелом)</label><br>
+	<input type="text" placeholder="Введите данные первого массива" name = "arr1" id="arr1"><br>
+	<label for="text">Массив(второй) строк длиной от 0 до 9 элементов(Каждый элемент массива при записи надо разделять пробелом)</label><br>
+	<input type="text" placeholder="Введите данные второго массива" name = "arr2" id="arr2" >	<br>
+	<input type="button" onclick="valid(form)"  name="button" value="Отправить данные">
+	</form>
+	<div class="result">
+	<h1>Результат:</h1>
+	<h2 class="number">...</h2>
+	</div>
+	</header>
+</body>
+</html>
